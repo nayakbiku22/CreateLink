@@ -10,9 +10,9 @@ app.use(cors());
 app.use('/',router)
 
 dbConnection();
-app.get('/',(req,res)=>{
-    res.send("Hello")
-})
+// app.get('/he',(req,res)=>{
+//     res.send("Hello")
+// })
 app.listen(PORT,()=>{
     console.log(`Server is listening on port ${PORT} `)
 })
