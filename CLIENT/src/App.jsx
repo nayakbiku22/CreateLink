@@ -19,6 +19,7 @@ function App() {
           data.append('file',file)
 
          const res=await uploadFile(data)
+        //  console.log(res)
          setResult(res.path)
         }
     }

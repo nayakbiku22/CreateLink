@@ -10,7 +10,7 @@ const File=require('../models/file')
     try {
         const file=await File.create(fileObj)
         // console.log(file)
-        res.status(200).json({path:`http://localhost:8080/file/${file._id}`})
+        res.status(200).json({path:`https://create-link-server.vercel.app/file/${file._id}`})
     } catch (error) {
         console.error(error.message)
         res.status(500).json({error:error.message})
